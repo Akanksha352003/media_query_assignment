@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+</head>
+<style>
+    .image-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .image-gallery img{
+        width: 30%;
+        margin: 10px;
+    }
+    @media screen and (max-width: 800px) {
+        .image-gallery img{
+        width: 45%;
+    }
+    }
+    @media screen and (max-width: 500px) {
+        .image-gallery img{
+        width: 100%;
+    }
+    }
+</style>
+<body>
+    <h1 style="text-align: center">Assignment Problem Solution</h1>
+    <h2 style="text-align: center; color: #ff0000">
+      Task no. 2 - Responsive Image
+    </h2>
+    <div class="image-gallery">
+        <img src="https://fastly.picsum.photos/id/902/200/300.jpg?hmac=jcXqlZDNedKqsptpWe_80nmMFRvBXBCnWCpzYwJik3g" alt="Image-1">
+        <img src="https://fastly.picsum.photos/id/902/200/300.jpg?hmac=jcXqlZDNedKqsptpWe_80nmMFRvBXBCnWCpzYwJik3g" alt="Image-2">
+        <img src="https://fastly.picsum.photos/id/902/200/300.jpg?hmac=jcXqlZDNedKqsptpWe_80nmMFRvBXBCnWCpzYwJik3g" alt="Image-3">
+    </div>
+</body>
+</html>
